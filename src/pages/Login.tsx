@@ -9,7 +9,7 @@ export function Login() {
   const isConfigured = SPOTIFY_CONFIG.CLIENT_ID && SPOTIFY_CONFIG.CLIENT_ID.length > 0;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 py-12">
       {/* Animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-spotify-dark via-spotify-black to-[#1a1a2e]" />
@@ -127,7 +127,7 @@ export function Login() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-3 mb-10"
+          className="flex flex-wrap justify-center gap-3 mb-8"
         >
           {['Top Tracks', 'Top Artists', 'Genres', 'Listening Stats'].map((feature, index) => (
             <motion.span
