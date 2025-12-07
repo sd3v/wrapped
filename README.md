@@ -1,10 +1,10 @@
-# 🎵 Spotify Wrapped
+# Spotify Wrapped
 
 Your personal Spotify analytics dashboard - see your top tracks, artists, and genres.
 
 ![Dashboard](media/screenshot-dashboard.png)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Create a Spotify App
 
@@ -26,7 +26,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Open [http://127.0.0.1:5173](http://127.0.0.1:5173) 🎉
+Open [http://127.0.0.1:5173](http://127.0.0.1:5173) 
 
 ## Tech Stack
 
