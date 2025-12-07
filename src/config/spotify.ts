@@ -5,7 +5,7 @@ export const SPOTIFY_CONFIG = {
   CLIENT_ID: import.meta.env.VITE_SPOTIFY_CLIENT_ID || '',
   
   REDIRECT_URI: typeof window !== 'undefined' 
-    ? `${window.location.protocol}//${window.location.hostname === 'localhost' ? '127.0.0.1' : window.location.hostname}:${window.location.port}/callback`
+    ? `${window.location.origin}/callback`
     : 'http://127.0.0.1:5173/callback',
   
   SCOPES: [
