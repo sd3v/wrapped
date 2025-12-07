@@ -4,8 +4,6 @@ Your personal Spotify analytics dashboard - see your top tracks, artists, and ge
 
 ![Dashboard](media/screenshot-dashboard.png)
 
-![Genres & Artists](media/screenshot-genres.png)
-
 ## 🚀 Quick Start
 
 ### 1. Create a Spotify App
@@ -20,7 +18,7 @@ http://127.0.0.1:5173/callback
 ### 2. Setup
 
 ```bash
-git clone <repo>
+git clone git@github.com:sd3v/wrapped.git
 cd wrapped
 npm install
 cp .env.example .env
