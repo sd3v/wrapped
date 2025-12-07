@@ -78,7 +78,7 @@ export function Login() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center max-w-lg"
+        className="text-center max-w-lg w-full flex flex-col items-center"
       >
         {/* Logo */}
         <motion.div
