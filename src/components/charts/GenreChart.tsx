@@ -65,10 +65,10 @@ export function GenreChart({ genres, limit = 8 }: GenreChartProps) {
                 borderRadius: '8px',
                 color: '#fff',
               }}
-              formatter={(value: number, _name: string, props: { payload: GenreData }) => [
-                `${props.payload.percentage}%`,
-                props.payload.name,
-              ]}
+              formatter={(_value, _name, props) => {
+                const payload = props?.payload as GenreData | undefined;
+                return payload ? [`${payload.percentage}%`, payload.name] : [];
+              }}
             />
             <Legend
               layout="vertical"
